@@ -1,11 +1,11 @@
 ---
 id: com.sublimetext.three.DevUtils
-branch: "1.6"
+branch: "18.08"
 build-extension: true
 
 runtime: com.sublimetext.three
 runtime-version: stable
-sdk: org.freedesktop.Sdk//1.6
+sdk: org.freedesktop.Sdk//18.08
 
 separate-locales: false
 appstream-compose: false
@@ -19,7 +19,7 @@ modules:
   - name: python3-pycodestyle
     buildsystem: simple
     build-commands:
-      - pip3.5 install --prefix=/app/utils pycodestyle-2.3.1-py2.py3-none-any.whl
+      - pip3.7 install --prefix=/app/utils pycodestyle-2.3.1-py2.py3-none-any.whl
     sources:
       - type: file
         url: https://pypi.python.org/packages/e4/81/78fe51eb4038d1388b7217dd63770b0f428370207125047312886c923b26/pycodestyle-2.3.1-py2.py3-none-any.whl
@@ -27,7 +27,7 @@ modules:
   - name: python3-pyflakes
     buildsystem: simple
     build-commands:
-      - pip3.5 install --prefix=/app/utils pyflakes-1.5.0-py2.py3-none-any.whl
+      - pip3.7 install --prefix=/app/utils pyflakes-1.5.0-py2.py3-none-any.whl
     sources:
       - type: file
         url: https://pypi.python.org/packages/27/49/924098b3b85c286696f37e014475d79471ffc44509613af420645a3c12cb/pyflakes-1.5.0-py2.py3-none-any.whl
@@ -35,9 +35,9 @@ modules:
   - name: python3-yamllint
     buildsystem: simple
     build-commands:
-      - pip3.5 install --prefix=/app/utils pathspec-0.5.5.tar.gz
-      - pip3.5 install --prefix=/app/utils PyYAML-3.12.tar.gz
-      - pip3.5 install --prefix=/app/utils yamllint-1.10.0-py2.py3-none-any.whl
+      - pip3.7 install --prefix=/app/utils pathspec-0.5.5.tar.gz
+      - pip3.7 install --prefix=/app/utils PyYAML-3.12.tar.gz
+      - pip3.7 install --prefix=/app/utils yamllint-1.10.0-py2.py3-none-any.whl
     sources:
       - type: file
         url: https://pypi.python.org/packages/9f/fb/5a901a3b1eeebf83af6da74ecca69d7daf5189e450f0f4cccf9c19132651/pathspec-0.5.5.tar.gz
