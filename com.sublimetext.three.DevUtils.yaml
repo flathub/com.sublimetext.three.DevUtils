@@ -16,36 +16,9 @@ build-options:
     PYTHONPATH: /app/utils/lib/python3.5/site-packages:/app/lib/python3.5/site-packages:/usr/lib/python3.5/site-packages
 
 modules:
-  - name: python3-pycodestyle
-    buildsystem: simple
-    build-commands:
-      - pip3.7 install --prefix=/app/utils pycodestyle-2.4.0-py2.py3-none-any.whl
-    sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/e5/c6/ce130213489969aa58610042dff1d908c25c731c9575af6935c2dfad03aa/pycodestyle-2.4.0-py2.py3-none-any.whl
-        sha256: cbc619d09254895b0d12c2c691e237b2e91e9b2ecf5e84c26b35400f93dcfb83
-  - name: python3-pyflakes
-    buildsystem: simple
-    build-commands:
-      - pip3.7 install --prefix=/app/utils pyflakes-2.0.0-py2.py3-none-any.whl
-    sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/44/98/af7a72c9a543b1487d92813c648cb9b9adfbc96faef5455d60f4439aa99b/pyflakes-2.0.0-py2.py3-none-any.whl
-        sha256: f661252913bc1dbe7fcfcbf0af0db3f42ab65aabd1a6ca68fe5d466bace94dae
-  - name: python3-yamllint
-    buildsystem: simple
-    build-commands:
-      - pip3.7 install --no-index --find-links="file://${PWD}" --prefix=/app/utils yamllint
-    sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/84/2a/bfee636b1e2f7d6e30dd74f49201ccfa5c3cf322d44929ecc6c137c486c5/pathspec-0.5.9.tar.gz
-        sha256: 54a5eab895d89f342b52ba2bffe70930ef9f8d96e398cccf530d21fa0516a873
-      - type: file
-        url: https://files.pythonhosted.org/packages/9e/a3/1d13970c3f36777c583f136c136f804d70f500168edc1edea6daa7200769/PyYAML-3.13.tar.gz
-        sha256: 3ef3092145e9b70e3ddd2c7ad59bdd0252a94dfe3949721633e41344de00a6bf
-      - type: file
-        url: https://files.pythonhosted.org/packages/8a/1b/247f61b9cb8c810f9cb69bbc2e0564ef45d6079131f0f4e70ba687668056/yamllint-1.13.0-py2.py3-none-any.whl
-        sha256: 9d4ec0da83ce33799e0f87f2882aab8d3ce790d30fe147438c5083c7a26e4044
+  - python3-pycodestyle.json
+  - python3-pyflakes.json
+  - python3-yamllint.json
   - name: nodejs
     cleanup:
       - /include
@@ -57,8 +30,8 @@ modules:
       - /app/lib/node_modules/npm/scripts
     sources:
       - type: archive
-        url: https://nodejs.org/dist/v10.14.2/node-v10.14.2.tar.xz
-        sha256: ae1aec55e3ca8f4debfb8c07489209fd84d3c47b26e6672e1cf7a7820f95acd3
+        url: https://nodejs.org/dist/v10.16.2/node-v10.16.2.tar.xz
+        sha256: 6cbc17795e9259dce7a8f5fd5a2e46f9e6920fb48b7d9539c5b2faa5bb5db4d8
   - name: js-packages
     buildsystem: simple
     sources:
