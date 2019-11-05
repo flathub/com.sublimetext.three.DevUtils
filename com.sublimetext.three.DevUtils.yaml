@@ -30,8 +30,8 @@ modules:
       - /app/lib/node_modules/npm/scripts
     sources:
       - type: archive
-        url: https://nodejs.org/dist/v10.16.2/node-v10.16.2.tar.xz
-        sha256: 6cbc17795e9259dce7a8f5fd5a2e46f9e6920fb48b7d9539c5b2faa5bb5db4d8
+        url: https://nodejs.org/dist/v12.13.0/node-v12.13.0.tar.xz
+        sha256: a82b1541cf670318a0102c32e06f296662b5ccccae764c1f32be4a3cf038bef6
   - name: js-packages
     buildsystem: simple
     sources:
