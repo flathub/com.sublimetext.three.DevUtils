@@ -4,8 +4,8 @@
   "description": "Flatpak packaging for Sublime text editor. This works by fetching the sublime debian at install time and extracting the necessary files out of it.",
   "dependencies": {
     "csslint": "^1.0.5",
-    "eslint": "^6.1.0",
-    "jshint": "^2.10.2"
+    "eslint": "^6.8.0",
+    "jshint": "^2.11.0"
   },
   "devDependencies": {}
 }
