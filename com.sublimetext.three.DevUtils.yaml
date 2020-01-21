@@ -1,37 +1,30 @@
 ---
 id: com.sublimetext.three.DevUtils
-branch: "18.08"
+branch: "19.08"
 build-extension: true
 
 runtime: com.sublimetext.three
 runtime-version: stable
-sdk: org.freedesktop.Sdk//18.08
+sdk: org.freedesktop.Sdk//19.08
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.node12
 
 separate-locales: false
 appstream-compose: false
 build-options:
   prefix: /app/utils
   env:
-    PATH: /app/utils/bin:/app/bin:/usr/bin
-    PYTHONPATH: /app/utils/lib/python3.5/site-packages:/app/lib/python3.5/site-packages:/usr/lib/python3.5/site-packages
+    PATH: /usr/lib/sdk/node12/bin:/app/utils/bin:/app/bin:/usr/bin
+    PYTHONPATH: /app/utils/lib/python3.7/site-packages:/app/lib/python3.7/site-packages:/usr/lib/python3.7/site-packages
 
 modules:
   - python3-pycodestyle.json
   - python3-pyflakes.json
   - python3-yamllint.json
   - name: nodejs
-    cleanup:
-      - /include
-      - /share
-      - /app/lib/node_modules/npm/changelogs
-      - /app/lib/node_modules/npm/doc
-      - /app/lib/node_modules/npm/html
-      - /app/lib/node_modules/npm/man
-      - /app/lib/node_modules/npm/scripts
-    sources:
-      - type: archive
-        url: https://nodejs.org/dist/v12.14.1/node-v12.14.1.tar.xz
-        sha256: 877b4b842318b0e09bc754faf7343f2f097f0fc4f88ab9ae57cf9944e88e7adb
+    buildsystem: simple
+    build-commands:
+      - install -Dm 755 /usr/lib/sdk/node12/bin/node /app/utils/bin/node
   - name: js-packages
     buildsystem: simple
     sources:
