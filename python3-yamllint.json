@@ -7,18 +7,18 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/e3/e8/b3212641ee2718d556df0f23f78de8303f068fe29cdaa7a91018849582fe/PyYAML-5.1.2.tar.gz",
-            "sha256": "01adf0b6c6f61bd11af6e10ca52b7d4057dd0be0343eb9283c878cf3af56aee4"
+            "url": "https://files.pythonhosted.org/packages/3d/d9/ea9816aea31beeadccd03f1f8b625ecf8f645bd66744484d162d84803ce5/PyYAML-5.3.tar.gz",
+            "sha256": "e9f45bd5b92c7974e59bcd2dcc8631a6b6cc380a904725fce7bc08872e691615"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/84/2a/bfee636b1e2f7d6e30dd74f49201ccfa5c3cf322d44929ecc6c137c486c5/pathspec-0.5.9.tar.gz",
-            "sha256": "54a5eab895d89f342b52ba2bffe70930ef9f8d96e398cccf530d21fa0516a873"
+            "url": "https://files.pythonhosted.org/packages/34/fa/c5cc4f796eb954b56fd1f6c7c315647b18b027e0736c9ae87b73bbb1f933/pathspec-0.7.0-py2.py3-none-any.whl",
+            "sha256": "163b0632d4e31cef212976cf57b43d9fd6b0bac6e67c26015d611a647d5e7424"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/39/b5/390c956b1aad9a0de18cffa94dba8610b9eca4bd142aa56746e31a388f14/yamllint-1.17.0-py2.py3-none-any.whl",
-            "sha256": "67173339f28868260ce5912abfefa10e115ceb1d2ac1c4d8c7acc8c4ef6c9a8a"
+            "url": "https://files.pythonhosted.org/packages/0f/3e/a3d6c73d8e7aee22faba6d96f9b8e24a5db425f42851922aa99e1bef328a/yamllint-1.20.0-py2.py3-none-any.whl",
+            "sha256": "7318e189027951983c3cb4d6bcaa1e75deef7c752320ca3ce84e407f2551e8ce"
         }
     ]
 }
