@@ -2,13 +2,13 @@
     "name": "python3-pycodestyle",
     "buildsystem": "simple",
     "build-commands": [
-        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pycodestyle"
+        "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pycodestyle\""
     ],
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/0e/0c/04a353e104d2f324f8ee5f4b32012618c1c86dd79e52a433b64fceed511b/pycodestyle-2.5.0-py2.py3-none-any.whl",
-            "sha256": "95a2219d12372f05704562a14ec30bc76b05a5b297b21a5dfe3f6fac3491ae56"
+            "url": "https://files.pythonhosted.org/packages/10/5b/88879fb861ab79aef45c7e199cae3ef7af487b5603dcb363517a50602dd7/pycodestyle-2.6.0-py2.py3-none-any.whl",
+            "sha256": "2295e7b2f6b5bd100585ebcb1f616591b652db8a741695b3d8f5d28bdc934367"
         }
     ]
 }
