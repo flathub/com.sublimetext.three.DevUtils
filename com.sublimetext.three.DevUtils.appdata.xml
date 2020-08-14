@@ -14,5 +14,6 @@
     <category>Utility</category>
     <category>TextEditor</category>
   </categories>
+  <icon type="remote">https://raw.githubusercontent.com/flathub/com.sublimetext.three/master/com.sublimetext.three-128.png</icon>
   <update_contact>philip_AT_endlessm.com</update_contact>
 </component>
