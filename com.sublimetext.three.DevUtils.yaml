@@ -1,21 +1,21 @@
 ---
 id: com.sublimetext.three.DevUtils
-branch: "19.08"
+branch: "21.08"
 build-extension: true
 
 runtime: com.sublimetext.three
 runtime-version: stable
-sdk: org.freedesktop.Sdk//19.08
+sdk: org.freedesktop.Sdk//21.08
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node12
+  - org.freedesktop.Sdk.Extension.node16
 
 separate-locales: false
 appstream-compose: false
 build-options:
   prefix: /app/utils
   env:
-    PATH: /usr/lib/sdk/node12/bin:/app/utils/bin:/app/bin:/usr/bin
-    PYTHONPATH: /app/utils/lib/python3.7/site-packages:/app/lib/python3.7/site-packages:/usr/lib/python3.7/site-packages
+    PATH: /usr/lib/sdk/node16/bin:/app/utils/bin:/app/bin:/usr/bin
+    PYTHONPATH: /app/utils/lib/python3.9/site-packages:/app/lib/python3.9/site-packages:/usr/lib/python3.9/site-packages
 
 modules:
   - python3-pycodestyle.json
@@ -24,7 +24,7 @@ modules:
   - name: nodejs
     buildsystem: simple
     build-commands:
-      - install -Dm 755 /usr/lib/sdk/node12/bin/node /app/utils/bin/node
+      - install -Dm 755 /usr/lib/sdk/node16/bin/node /app/utils/bin/node
   - name: js-packages
     buildsystem: simple
     sources:
