@@ -7,6 +7,7 @@ runtime: com.sublimetext.three
 runtime-version: stable
 sdk: org.freedesktop.Sdk//21.08
 sdk-extensions:
+  - org.freedesktop.Sdk.Extension.llvm13
   - org.freedesktop.Sdk.Extension.node16
 
 separate-locales: false
@@ -21,6 +22,14 @@ modules:
   - python3-pycodestyle.json
   - python3-pyflakes.json
   - python3-yamllint.json
+  - name: copy-clang
+    buildsystem: simple
+    build-commands:
+      - install -Dm 755 /usr/lib/sdk/llvm13/bin/clang-13 /app/utils/bin/clang-13
+      - ln -s /app/utils/bin/clang-13 /app/utils/bin/clang
+      - ln -s /app/utils/bin/clang-13 /app/utils/bin/clang++
+      - mkdir -p /app/utils/lib/clang/13.0.1/include
+      - cp -r /usr/lib/sdk/llvm13/lib/clang/13.0.1/include/* /app/utils/lib/clang/13.0.1/include
   - name: nodejs
     buildsystem: simple
     build-commands:
